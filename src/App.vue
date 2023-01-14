@@ -4,12 +4,11 @@ import { RouterLink, RouterView } from 'vue-router'
 
 <template>
   <header>
-    <h1 class="header__heading">Donut Shop</h1>
+    <h1 class="header__heading mb-4">Donut Shop</h1>
     <div class="wrapper">
-
-      <nav>
-<!--        <RouterLink to="/">Home</RouterLink>-->
-<!--        <RouterLink to="/about">About</RouterLink>-->
+      <nav class="flex justify-start gap-4">
+        <RouterLink to="/" class="text-xl text-black hover:text-opacity-70 p-4">Home</RouterLink>
+        <RouterLink to="/about" class="text-xl text-black hover:text-opacity-70 p-4">About</RouterLink>
       </nav>
     </div>
   </header>
@@ -25,59 +24,12 @@ header {
 .header__heading {
   font-family: 'Dancing Script';
   font-size: 50px;
-  text-shadow: 1px 1px 15px rebeccapurple;
+  text-shadow: 1px 1px 15px #c29bec;
+  color: #953753;
 }
 
-
-nav {
-  width: 100%;
-  font-size: 12px;
-  text-align: center;
-  margin-top: 2rem;
+.router-link-exact-active {
+  border-bottom: 2px #953753 solid;
 }
 
-nav a.router-link-exact-active {
-  color: var(--color-text);
-}
-
-nav a.router-link-exact-active:hover {
-  background-color: transparent;
-}
-
-nav a {
-  display: inline-block;
-  padding: 0 1rem;
-  border-left: 1px solid var(--color-border);
-}
-
-nav a:first-of-type {
-  border: 0;
-}
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-
-  nav {
-    text-align: left;
-    margin-left: -1rem;
-    font-size: 1rem;
-
-    padding: 1rem 0;
-    margin-top: 1rem;
-  }
-}
 </style>
