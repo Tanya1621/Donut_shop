@@ -9,6 +9,7 @@ import { RouterLink, RouterView } from 'vue-router'
       <nav class="flex justify-start gap-4">
         <RouterLink to="/" class="text-xl text-black hover:text-opacity-70 p-4">Home</RouterLink>
         <RouterLink to="/about" class="text-xl text-black hover:text-opacity-70 p-4">About</RouterLink>
+        <RouterLink to="/cart" class="text-xl text-black hover:text-opacity-70 p-4">Cart</RouterLink>
       </nav>
     </div>
   </header>
